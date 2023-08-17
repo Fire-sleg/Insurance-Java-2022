@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.termpaper.MotorLiabilityController">
+   <children>
+      <TextField fx:id="company" layoutX="53.0" layoutY="71.0" promptText="company" />
+      <TextField fx:id="carBrand" layoutX="53.0" layoutY="104.0" promptText="car brand" />
+      <TextField fx:id="yearOfManufacture" layoutX="53.0" layoutY="138.0" promptText="year of manufacture" />
+      <TextField fx:id="carModel" layoutX="53.0" layoutY="170.0" promptText="car model" />
+      <TextField fx:id="carPrice" layoutX="53.0" layoutY="204.0" promptText="car price" />
+      <Label fx:id="cost" layoutX="53.0" layoutY="282.0" text="cost:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="233.0" layoutY="335.0" mnemonicParsing="false" onAction="#calculate" prefHeight="43.0" prefWidth="134.0" text="Calculate">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="412.0" layoutY="335.0" mnemonicParsing="false" onAction="#apply" prefHeight="43.0" prefWidth="134.0" text="Apply">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="53.0" layoutY="335.0" mnemonicParsing="false" onAction="#backToActionScene" prefHeight="43.0" prefWidth="134.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="145.0" fitWidth="174.0" layoutX="370.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="213.0" layoutY="14.0" text="Enter the data">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="carNumber" layoutX="53.0" layoutY="240.0" promptText="car number" />
+      <TextField fx:id="bodyNumber" layoutX="213.0" layoutY="240.0" promptText="body number" />
+   </children>
+</AnchorPane>

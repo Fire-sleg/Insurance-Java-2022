@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.termpaper.ViewController">
+   <children>
+      <TableView fx:id="commonDataTable" layoutX="68.0" layoutY="81.0" prefHeight="150.0" prefWidth="1406.0">
+         <columns>
+            <TableColumn fx:id="start_date" prefWidth="281.2" text="start_date" />
+            <TableColumn fx:id="validity" prefWidth="281.2" text="validity" />
+            <TableColumn fx:id="finish_date" minWidth="4.79998779296875" prefWidth="281.2" text="finish_date" />
+            <TableColumn fx:id="company" prefWidth="281.2" text="company" />
+            <TableColumn fx:id="cost" prefWidth="281.2" text="cost" />
+         </columns>
+      </TableView>
+      <TableView fx:id="cascoTable" layoutX="68.0" layoutY="294.0" prefHeight="150.0" prefWidth="1406.0">
+        <columns>
+          <TableColumn fx:id="car_brandC" prefWidth="351.5" text="car_brand" />
+          <TableColumn fx:id="car_modelC" prefWidth="351.5" text="car_model" />
+            <TableColumn fx:id="yearC" prefWidth="351.5" text="year_of_manufacture_of_the_car" />
+            <TableColumn fx:id="car_priceC" prefWidth="351.5" text="car_price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="motorLiabilityTable" layoutX="68.0" layoutY="505.0" prefHeight="150.0" prefWidth="722.0">
+        <columns>
+          <TableColumn fx:id="car_numberM" prefWidth="114.39999389648438" text="car_number" />
+          <TableColumn fx:id="car_brandM" prefWidth="112.00001525878906" text="car_brand" />
+            <TableColumn fx:id="car_modelM" prefWidth="116.00006103515625" text="car_model" />
+            <TableColumn fx:id="yearM" prefWidth="212.00006103515625" text="year_of_manufacture_of_the_car" />
+            <TableColumn fx:id="body_numberM" prefWidth="166.40008544921875" text="body_number" />
+        </columns>
+      </TableView>
+      <TableView fx:id="greenCardTable" layoutX="817.0" layoutY="505.0" prefHeight="150.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="region_of_stayG" prefWidth="329.0" text="region_of_stay" />
+          <TableColumn fx:id="vehicleG" prefWidth="329.0" text="vehicle" />
+        </columns>
+      </TableView>
+      <Button layoutX="714.0" layoutY="734.0" mnemonicParsing="false" onAction="#getCommonDataView" prefHeight="44.0" prefWidth="152.0" text="Get Data">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="1315.0" layoutY="733.0" mnemonicParsing="false" onAction="#view" prefHeight="46.0" prefWidth="158.0" text="Push Data">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="68.0" layoutY="733.0" mnemonicParsing="false" onAction="#backToActionScene" prefHeight="46.0" prefWidth="158.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="68.0" layoutY="263.0" text="CASCO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="472.0" text="Motor liability">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="817.0" layoutY="472.0" text="Green card">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="14.0" text="View your insurances">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

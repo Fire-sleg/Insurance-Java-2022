@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.termpaper.CascoRiskController">
+   <children>
+      <CheckBox fx:id="animalAttack" layoutX="216.0" layoutY="70.0" mnemonicParsing="false" text="Animal attack">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fireExplosion" layoutX="216.0" layoutY="100.0" mnemonicParsing="false" text="Fire explosion">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fallingObjects" layoutX="216.0" layoutY="130.0" mnemonicParsing="false" text="Falling objects">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="disaster" layoutX="216.0" layoutY="160.0" mnemonicParsing="false" text="Disaster">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="militaryRisks" layoutX="216.0" layoutY="190.0" mnemonicParsing="false" text="Military risks">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="completeDeath" layoutX="216.0" layoutY="220.0" mnemonicParsing="false" text="Complete death of the car">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="illegalActionsOfThirdParties" layoutX="216.0" layoutY="250.0" mnemonicParsing="false" text="Illegal actions of third parties">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="carTheft" layoutX="216.0" layoutY="280.0" mnemonicParsing="false" text="Car theft">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="roadAccident" layoutX="215.0" layoutY="310.0" mnemonicParsing="false" text="Road accident">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="412.0" layoutY="335.0" mnemonicParsing="false" onAction="#apply" prefHeight="43.0" prefWidth="134.0" text="Apply">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="53.0" layoutY="335.0" mnemonicParsing="false" onAction="#backToActionScene" prefHeight="43.0" prefWidth="134.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Label layoutX="208.0" layoutY="14.0" text="Select the risks">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

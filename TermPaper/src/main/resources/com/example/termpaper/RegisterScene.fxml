@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.termpaper.RegisterController">
+   <children>
+      <TextField fx:id="name" layoutX="65.0" layoutY="104.0" promptText="Name:" />
+      <TextField fx:id="city" layoutX="65.0" layoutY="162.0" prefHeight="26.0" prefWidth="110.0" promptText="City:" />
+      <Button layoutX="401.0" layoutY="325.0" mnemonicParsing="false" onAction="#applyRegister" prefHeight="43.0" prefWidth="134.0" text="Apply">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="65.0" layoutY="325.0" mnemonicParsing="false" onAction="#backToStartScene" prefHeight="43.0" prefWidth="134.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <TextField fx:id="surname" layoutX="222.0" layoutY="104.0" promptText="Surname:" />
+      <TextField fx:id="middleName" layoutX="383.0" layoutY="104.0" promptText="Middlename:" />
+      <Label layoutX="222.0" layoutY="14.0" text="Registration">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="80.0" text="Name" textFill="#818181">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="138.0" text="Address" textFill="#818181">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apartment" layoutX="424.0" layoutY="162.0" prefHeight="26.0" prefWidth="110.0" promptText="Apartment:" />
+      <TextField fx:id="house" layoutX="305.0" layoutY="162.0" prefHeight="26.0" prefWidth="110.0" promptText="House:" />
+      <TextField fx:id="street" layoutX="184.0" layoutY="162.0" prefHeight="26.0" prefWidth="110.0" promptText="Street:" />
+      <Label layoutX="65.0" layoutY="200.0" text="Contact Info" textFill="#818181">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TIN" layoutX="65.0" layoutY="222.0" promptText="TIN:" />
+      <TextField fx:id="email" layoutX="224.0" layoutY="222.0" promptText="Email:" />
+      <TextField fx:id="phoneNumber" layoutX="385.0" layoutY="222.0" promptText="Phone number:" />
+      <TextField fx:id="password1" layoutX="65.0" layoutY="283.0" promptText="Password:" />
+      <TextField fx:id="password2" layoutX="385.0" layoutY="283.0" promptText="Password:" />
+      <Label layoutX="65.0" layoutY="261.0" text="Password" textFill="#818181">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
